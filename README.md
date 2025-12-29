@@ -5,8 +5,6 @@ Cześć! Witaj w naszym repozytorium. Tutaj znajdziesz wszystkie kody, instrukcj
 ## 📂 Co tu znajdziesz?
 
 * **`/middle_robots`** – Tutaj są kody do naszych robotów (sterowanie Bluetooth, jazda autonomiczna).
-* **`/instrukcje`** – Schematy podłączenia kabli (jeśli dodasz je w przyszłości).
-
 ---
 
 ## 🚀 Jak korzystać z kodów?
@@ -20,12 +18,12 @@ Nie musisz się logować! Aby pobrać kod:
 
 ## 📤 Jak wysłać swoją pracę?
 
-Zrobiłeś zadanie? Napisałeś własny super kod? Wyślij go do mnie bez logowania!
+Zrobiłeś zadanie? Napisałeś własny super kod? Wyślij go do mnie!
 
-1. Zapisz swój plik na pulpicie (nazwij go swoim imieniem, np. `Janek_Robot.ino`).
+1. Zapisz swój plik (nazwij go swoim imieniem, np. `Janek_Robot.ino`).
 2. Kliknij w poniższy link:
    
-   👉 **[WRZUĆ SWÓJ KOD TUTAJ - KLIK]** (wklej_tu_link_do_swojego_formularza_google) 👈
+   👉 **[WRZUĆ SWÓJ KOD TUTAJ - KLIK]**  👈
 
 3. Wybierz plik z komputera i kliknij "Wyślij". Gotowe!
 
