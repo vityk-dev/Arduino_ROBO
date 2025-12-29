@@ -1,14 +1,17 @@
 #include <SoftwareSerial.h>
 // ------------ PINY ------------
+
+//!!! PINY PWM NA ARDUINO NANO: D3, D5, D6, D9, D10, D11 !!!
+
 //piny bluetooth
 int rx = 2;
 int tx = 3;
 
 //piny silnikow
 int motor_left_pin1 = 4;
-int motor_left_pin2 = 5;
-int motor_right_pin1 = 6;
-int motor_right_pin2 = 7;
+int motor_left_pin2 = 5; //PWM
+int motor_right_pin1 = 8;
+int motor_right_pin2 = 9; //PWM
 
 // ------------ ZMIENNE ------------
 SoftwareSerial bt(rx, tx);
@@ -19,23 +22,23 @@ int car_speed = 100;
 void forward() {
   //lewy silnik
   digitalWrite(motor_left_pin1, LOW);
-  analogWrite(motor_left_pin2, 1.2*car_speed); //dostosuj 1.2 tak aby predkosc byla w miare rowna
+  analogWrite(motor_left_pin2, 1*car_speed); //dostosuj 1 tak aby predkosc byla w miare rowna
   //prawy silnik
   digitalWrite(motor_right_pin1, LOW);
-  analogWrite(motor_right_pin2, 1*car_speed); //dostosuj 1.2 tak aby predkosc byla w miare rowna
+  analogWrite(motor_right_pin2, 0.8*car_speed); //dostosuj 0.8 tak aby predkosc byla w miare rowna
 }
 void backward() {
   //lewy silnik
   digitalWrite(motor_left_pin1, HIGH);
-  analogWrite(motor_left_pin2, 1.2*car_speed); //dostosuj 1.2 tak aby predkosc byla w miare rowna
+  analogWrite(motor_left_pin2, 1*car_speed); //dostosuj 1 tak aby predkosc byla w miare rowna
   //prawy silnik
   digitalWrite(motor_right_pin1, HIGH);
-  analogWrite(motor_right_pin2, 1.2*car_speed); //dostosuj 1.2 tak aby predkosc byla w miare rowna
+  analogWrite(motor_right_pin2, 0.8*car_speed); //dostosuj 0.8 tak aby predkosc byla w miare rowna
 }
 void right() {
   //lewy silnik
-  digitalWrite(motor_left_pin1, HIGH);
-  analogWrite(motor_left_pin2, 1.2*car_speed); //dostosuj 1.2 tak aby predkosc byla w miare rowna
+  digitalWrite(motor_left_pin1, LOW);
+  analogWrite(motor_left_pin2, car_speed);
   //prawy silnik
   digitalWrite(motor_right_pin1, LOW);
   analogWrite(motor_right_pin2, 0); //jezeli nie dziala sprobuj dac tutaj 255
@@ -45,8 +48,8 @@ void left() {
   digitalWrite(motor_left_pin1, LOW);
   analogWrite(motor_left_pin2, 0); //jezeli nie dziala sprobuj dac tutaj 255
   //prawy silnik
-  digitalWrite(motor_right_pin1, HIGH);
-  analogWrite(motor_right_pin2, 1.2*car_speed); //dostosuj 1.2 tak aby predkosc byla w miare rowna
+  digitalWrite(motor_right_pin1, LOW);
+  analogWrite(motor_right_pin2, car_speed); 
 }
 void stp() {
   //lewy silnik
