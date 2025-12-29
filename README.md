@@ -23,7 +23,7 @@ Zrobiłeś zadanie? Napisałeś własny super kod? Wyślij go do mnie!
 1. Zapisz swój plik (nazwij go swoim imieniem, np. `Janek_Robot.ino`).
 2. Kliknij w poniższy link:
    
-   👉 **[WRZUĆ SWÓJ KOD TUTAJ - KLIK]**  👈
+   👉 **[WRZUĆ SWÓJ KOD TUTAJ - https://robo.vityk4work.workers.dev/]**  👈
 
 3. Wybierz plik z komputera i kliknij "Wyślij". Gotowe!
 
