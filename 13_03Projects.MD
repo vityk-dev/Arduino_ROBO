@@ -1,6 +1,4 @@
-# 🚀 Zaawansowane Laboratoria Arduino: Projektowanie Asynchroniczne
-
-**⏱ Czas na projekt:** 120 minut
+https://github.com/antonmedv/textarea
 
 **📜 Zasady gry:**
 1. 🚫 **Zakaz używania `delay()`!** Każde opóźnienie, mruganie czy odmierzanie czasu musi być zrealizowane za pomocą funkcji `millis()`.
